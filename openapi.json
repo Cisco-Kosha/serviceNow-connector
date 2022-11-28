@@ -1,0 +1,166 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "contact": {},
+    "title": "",
+    "version": ""
+  },
+  "servers": [],
+  "paths": {
+    "/api/v1/specification/list": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "tags": [
+          "specification"
+        ],
+        "description": "Retrieve necessary environment variables",
+        "summary": "Get connector specification details"
+      }
+    },
+    "/table/{tableName}": {
+      "get": {
+        "parameters": [
+          {
+            "description": "Enter table name",
+            "in": "path",
+            "name": "tableName",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "tags": [
+          "table"
+        ],
+        "summary": "Retrieve all records from a table"
+      },
+      "post": {
+        "parameters": [
+          {
+            "description": "Enter table name",
+            "in": "path",
+            "name": "tableName",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "tags": [
+          "table"
+        ],
+        "summary": "Create a records for a table"
+      }
+    },
+    "/table/{tableName}/{sysId}": {
+      "delete": {
+        "parameters": [
+          {
+            "description": "Enter table name",
+            "in": "path",
+            "name": "tableName",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Enter table record sys id",
+            "in": "path",
+            "name": "sysId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "tags": [
+          "table"
+        ],
+        "summary": "Delete a record from a table"
+      },
+      "get": {
+        "parameters": [
+          {
+            "description": "Enter table name",
+            "in": "path",
+            "name": "tableName",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Enter table record sys id",
+            "in": "path",
+            "name": "sysId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "tags": [
+          "table"
+        ],
+        "summary": "Retrieve a single record from a table"
+      },
+      "put": {
+        "parameters": [
+          {
+            "description": "Enter table name",
+            "in": "path",
+            "name": "tableName",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Enter table record sys id",
+            "in": "path",
+            "name": "sysId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "tags": [
+          "table"
+        ],
+        "summary": "Modify a record from a table"
+      }
+    }
+  }
+}
