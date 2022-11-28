@@ -7,7 +7,7 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/kosha/serviceNow-connector/pkg/httpclient"
+	"github.com/kosha/servicenow-connector/pkg/httpclient"
 )
 
 // listConnectorSpecification godoc

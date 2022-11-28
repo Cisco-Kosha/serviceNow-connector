@@ -4,11 +4,12 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/kosha/serviceNow-connector/pkg/app"
-	"github.com/kosha/serviceNow-connector/pkg/logger"
+	"github.com/kosha/servicenow-connector/pkg/app"
+	"github.com/kosha/servicenow-connector/pkg/logger"
 )
+
 var (
-	log  = logger.New("app", "serviceNow-connector")
+	log  = logger.New("app", "servicenow-connector")
 	port = 8015
 )
 
@@ -30,7 +31,7 @@ func main() {
 
 	a := app.App{}
 	a.Initialize(log)
-	
-	log.Infof("Running serviceNow-connector on port %d", port)
+
+	log.Infof("Running servicenow-connector on port %d", port)
 	a.Run(fmt.Sprintf(":%d", port))
 }

@@ -1,4 +1,4 @@
-module github.com/kosha/serviceNow-connector
+module github.com/kosha/servicenow-connector
 
 go 1.18
 

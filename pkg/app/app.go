@@ -5,8 +5,8 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/kosha/serviceNow-connector/pkg/config"
-	"github.com/kosha/serviceNow-connector/pkg/logger"
+	"github.com/kosha/servicenow-connector/pkg/config"
+	"github.com/kosha/servicenow-connector/pkg/logger"
 )
 
 type App struct {

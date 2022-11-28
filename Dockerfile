@@ -5,10 +5,10 @@ ADD . /build/
 WORKDIR /build
 RUN rm /build/go.sum
 RUN go mod tidy
-RUN go build -o serviceNow-connector .
+RUN go build -o servicenow-connector .
 FROM docker.io/alpine
 RUN adduser -S -D -H -h /app appuser
 USER appuser
-COPY --from=builder /build/serviceNow-connector /app/
+COPY --from=builder /build/servicenow-connector /app/
 WORKDIR /app
-CMD ["./serviceNow-connector"]
+CMD ["./servicenow-connector"]
