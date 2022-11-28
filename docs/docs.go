@@ -36,7 +36,7 @@ const docTemplate = `{
                 }
             }
         },
-        "/table/{tableName}": {
+        "/api/v1/table/{tableName}": {
             "get": {
                 "consumes": [
                     "application/json"
@@ -90,7 +90,7 @@ const docTemplate = `{
                 }
             }
         },
-        "/table/{tableName}/{sysId}": {
+        "/api/v1/table/{tableName}/{sysId}": {
             "get": {
                 "consumes": [
                     "application/json"

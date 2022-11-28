@@ -14,7 +14,7 @@ paths:
       summary: Get connector specification details
       tags:
       - specification
-  /table/{tableName}:
+  /api/v1/table/{tableName}:
     get:
       consumes:
       - application/json
@@ -49,7 +49,7 @@ paths:
       summary: Create a records for a table
       tags:
       - table
-  /table/{tableName}/{sysId}:
+  /api/v1/table/{tableName}/{sysId}:
     delete:
       consumes:
       - application/json

@@ -21,7 +21,7 @@
         "summary": "Get connector specification details"
       }
     },
-    "/table/{tableName}": {
+    "/api/v1/table/{tableName}": {
       "get": {
         "parameters": [
           {
@@ -67,7 +67,7 @@
         "summary": "Create a records for a table"
       }
     },
-    "/table/{tableName}/{sysId}": {
+    "/api/v1/table/{tableName}/{sysId}": {
       "delete": {
         "parameters": [
           {

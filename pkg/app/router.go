@@ -78,7 +78,7 @@ func (a *App) listConnectorSpecification(w http.ResponseWriter, r *http.Request)
 // @Produce  json
 // @Param tableName path string true "Enter table name"
 // @Success 200
-// @Router /table/{tableName} [get]
+// @Router /api/v1/table/{tableName} [get]
 func (a *App) retrieveAllTableRecords(w http.ResponseWriter, r *http.Request) {
 	//Allow CORS here By * or specific origin
 	w.Header().Set("Access-Control-Allow-Origin", "*")
@@ -102,7 +102,7 @@ func (a *App) retrieveAllTableRecords(w http.ResponseWriter, r *http.Request) {
 // @Produce  json
 // @Param tableName path string true "Enter table name"
 // @Success 200
-// @Router /table/{tableName} [post]
+// @Router /api/v1/table/{tableName} [post]
 func (a *App) createTableRecords(w http.ResponseWriter, r *http.Request) {
 	//Allow CORS here By * or specific origin
 	w.Header().Set("Access-Control-Allow-Origin", "*")
@@ -132,7 +132,7 @@ func (a *App) createTableRecords(w http.ResponseWriter, r *http.Request) {
 // @Param tableName path string true "Enter table name"
 // @Param sysId path string true "Enter table record sys id"
 // @Success 200
-// @Router /table/{tableName}/{sysId} [get]
+// @Router /api/v1/table/{tableName}/{sysId} [get]
 func (a *App) retrieveSingleTableRecord(w http.ResponseWriter, r *http.Request) {
 	//Allow CORS here By * or specific origin
 	w.Header().Set("Access-Control-Allow-Origin", "*")
@@ -158,7 +158,7 @@ func (a *App) retrieveSingleTableRecord(w http.ResponseWriter, r *http.Request) 
 // @Param tableName path string true "Enter table name"
 // @Param sysId path string true "Enter table record sys id"
 // @Success 200
-// @Router /table/{tableName}/{sysId} [put]
+// @Router /api/v1/table/{tableName}/{sysId} [put]
 func (a *App) modifyTableRecord(w http.ResponseWriter, r *http.Request) {
 	//Allow CORS here By * or specific origin
 	w.Header().Set("Access-Control-Allow-Origin", "*")
@@ -190,7 +190,7 @@ func (a *App) modifyTableRecord(w http.ResponseWriter, r *http.Request) {
 // @Param tableName path string true "Enter table name"
 // @Param sysId path string true "Enter table record sys id"
 // @Success 200
-// @Router /table/{tableName}/{sysId} [delete]
+// @Router /api/v1/table/{tableName}/{sysId} [delete]
 func (a *App) deleteTableRecord(w http.ResponseWriter, r *http.Request) {
 	//Allow CORS here By * or specific origin
 	w.Header().Set("Access-Control-Allow-Origin", "*")
