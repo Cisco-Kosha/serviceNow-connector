@@ -1,42 +1,28 @@
-# Kosha serviceNow Connector
+# Kosha ServiceNow Connector
 
-## Description
+![servicenow](images/servicenow-logo.png)
 
-## Build
+The ServiceNow platform provides solutions for IT security, operations, customer service and HR, among other areas. The ServiceNow  platform also offers on-premise and cloud-based IT software and can be used to manage service-level projects and production instances within a department.
 
-To build the project binary, run 
-```
-    go build -o main .
+The Kosha ServiceNow connector enables you to perform REST API operations from the ServiceNow Table API in your Kosha workflow or custom application. Using the Kosha ServiceNow connector, you can directly access the ServiceNow platform to manage tables. 
 
-```
+## Useful Actions
 
-## Run locally
+You can use the Kosha ServiceNow connector to perform key actions from the ServiceNow Table API.
 
-To run the project, simply provide env variables to supply needed credentials.
+Refer to the Kosha ServiceNow connector [API specification](openapi.json) for details.
 
+* Retrieve all records from a table
+* Create records for a table
+* Delete a record from a table
+* Retrieve a single record from a table
+* Modify a record from a table
 
-```bash
-go build -o main .
-USERNAME=<USERNAME> PASSWORD=<PASSWORD> ./main
-```
+## Example Usage
 
+< tbd >
 
-This will start a worker and expose the API on port `8015` on the host machine
+## Authentication
 
-Swagger docs is available at `https://localhost:8015/docs`
+To authenticate when provisioning the Kosha ServiceNow connector, you need your ServiceNow username, password, and instance name. 
 
-## Generating Swagger Documentation
-
-To generate `swagger.json` and `swagger.yaml` files based on the API documentation, simple run -
-
-```bash
-go install github.com/swaggo/swag/cmd/swag@latest
-swag init -g main.go --parseDependency --parseInternal
-```
-
-To generate OpenAPISpec version 3 from Swagger 2.0 specification, run -
-
-```bash
-npm i api-spec-converter
-npx api-spec-converter --from=swagger_2 --to=openapi_3 --syntax=json ./docs/swagger.json > openapi.json
-```
