@@ -1,7 +1,5 @@
 # Kosha ServiceNow Connector
 
-![servicenow](images/servicenow-logo.png)
-
 The ServiceNow platform provides solutions for IT security, operations, customer service and HR, among other areas. The ServiceNow  platform also offers on-premise and cloud-based IT software and can be used to manage service-level projects and production instances within a department.
 
 The Kosha ServiceNow connector enables you to perform REST API operations from the ServiceNow Table API in your Kosha workflow or custom application. Using the Kosha ServiceNow connector, you can directly access the ServiceNow platform to manage tables. 
