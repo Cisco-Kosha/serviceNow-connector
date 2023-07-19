@@ -18,11 +18,15 @@ Refer to the Kosha ServiceNow connector [API specification](openapi.json) for de
 * Retrieve a single record from a table
 * Modify a record from a table
 
-## Example Usage
-
-< tbd >
-
 ## Authentication
 
 To authenticate when provisioning the Kosha ServiceNow connector, you need your ServiceNow username, password, and instance name. 
+
+
+
+## Contributing
+
+Pull requests and bug reports are welcome.
+
+For larger changes, please create an issue in GitHub first to discuss your proposed changes and their possible implications.
 
